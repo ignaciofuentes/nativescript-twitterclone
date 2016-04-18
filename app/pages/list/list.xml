@@ -1,0 +1,74 @@
+<Page
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:widgets="shared/widgets"
+  xmlns:statusbar="nativescript-statusbar"
+  loaded="loaded">
+
+  <Page.actionBar>
+    <ActionBar>
+        <ActionBar.titleView>
+            <Label text="&#xf099;" class="icon logo"></Label>
+        </ActionBar.titleView>
+        <ActionBar.actionItems>
+            <ActionItem id="friend" tap="cancelButtonTapped" ios.position="left">
+                <ActionItem.actionView>
+                <Label text="&#xf234;" class="icon friend"></Label>
+                </ActionItem.actionView>
+            </ActionItem>
+            <ActionItem id="friend" tap="cancelButtonTapped" ios.position="right">
+                <ActionItem.actionView>
+                <Label text="&#xf002;" class="icon friend"></Label>
+                </ActionItem.actionView>
+            </ActionItem>
+            <ActionItem id="friend" tap="cancelButtonTapped" ios.position="right">
+                <ActionItem.actionView>  
+                    <Button text="&#xf044;" class="icon compose"></Button>      
+                </ActionItem.actionView>
+            </ActionItem>
+        </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+
+     <GridLayout rows="*" id="main-content">
+       <ListView
+            items="{{ tweets }}"
+            id="tweetsList"
+            >
+           <ListView.itemTemplate>
+            <GridLayout columns="auto,*" rows="*" style="margin:10 0 0 0">
+                <Image row="0" col="0"                  
+                    src="{{ imageUrl }}"         
+                    class="image"
+                    stretch="aspectFit"
+                    verticalAlignment="top"
+                ></Image>
+                <StackLayout col="1" verticalAlignment="top">
+                    <Label backgrodundColor="red"  class="itemDetailText" fontSize="12">
+                        <Label.formattedText>
+                            <FormattedString>
+                            <FormattedString.spans>
+                                <Span text="{{ author }}" fontAttributes="Bold" foregroundColor="black"></Span>
+                                <Span text=" "></Span>
+                                <Span text="{{ handle }}" fontSize="10"></Span>
+                            </FormattedString.spans>
+                            </FormattedString>
+                        </Label.formattedText>
+                    </Label>
+                    <Label backgrodundColor="green" verticalAlignment="top" style="font-size:10;margin-bottom:10;margin-right:10" textWrap="true" text="{{ body }}"></Label>
+                    
+                    <StackLayout orientation="horizontal" verticalAlignment="bottom">
+                        <Button text="&#xf112;" class="icon tweetActionButton"></Button>
+                        <Button text="&#xf079;" class="icon tweetActionButton"></Button>
+                        <Button text="&#xf004;" class="icon tweetActionButton"></Button>
+                        <Button text="&#xf0e0;" class="icon tweetActionButton"></Button>
+                    </StackLayout>
+
+
+                </StackLayout>
+                <StackLayout class="separator" row="0" col="0" colSpan="2" 
+                verticalAlignment="bottom"></StackLayout>                        
+            </GridLayout>
+          </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>

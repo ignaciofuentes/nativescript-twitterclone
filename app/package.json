@@ -1,0 +1,42 @@
+{
+  "name": "nativescript-template-drawer-ts",
+  "main": "app.js",
+  "version": "1.1.0",
+  "author": {
+    "name": "Ignacio Fuentes"
+  },
+  "description": "A NativeScript starter template with drawer navigation",
+  "license": "MIT",
+  "keywords": [
+    "telerik",
+    "mobile",
+    "nativescript",
+    "{N}",
+    "tns",
+    "appbuilder",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ignaciofuentes/nativescript-template-drawer-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignaciofuentes/nativescript-template-drawer-ts/issues"
+  },
+  "homepage": "https://github.com/ignaciofuentes/nativescript-template-drawer-ts",
+  "dependencies": {
+    "nativescript-statusbar": "^1.0.0",
+    "nativescript-telerik-ui": "^0.2.4",
+    "tns-core-modules": "1.6.0"
+  },
+  "devDependencies": {
+    "nativescript-dev-typescript": "^0.3.0"
+  },
+  "readme": "# NativeScript Drawer Template\n\nA quick-and-dirty template for starting a new [NativeScript](https://www.nativescript.org/) app with drawer navigation pre-scaffolded in TypeScript.\n\nFull credit to TJ Van Toll for the [original JavaScript version](https://github.com/tjvantoll/nativescript-template-drawer) of this template.\n\n## Usage\n\n`tns create my-project-name --template nativescript-template-drawer-ts`\n\n## Screenshots\n\n![](http://i.imgur.com/i5Qm4Xh.png)\n![](http://i.imgur.com/sneoZhC.png)\n\n---\n\n![](http://i.imgur.com/ktJtT0y.png)\n![](http://i.imgur.com/6Kha8WY.png)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "e2968e28e86d623ce8d05751111a64706a5954d8",
+  "_id": "nativescript-template-drawer-ts@1.1.0",
+  "scripts": {},
+  "_shasum": "77333282077c23f510524924349558ccb90c3732",
+  "_from": "nativescript-template-drawer-ts@latest"
+}
